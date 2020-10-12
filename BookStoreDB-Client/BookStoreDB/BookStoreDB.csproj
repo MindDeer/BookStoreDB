@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9720F3F6-01E5-4D3F-A25D-54A11C765693}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookStoreDB</RootNamespace>
+    <AssemblyName>BookStoreDB</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Functions\InsertBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\InsertBook.Designer.cs">
+      <DependentUpon>InsertBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\InsertBookCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\InsertBookCP.Designer.cs">
+      <DependentUpon>InsertBookCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\InsertQiKan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\InsertQiKan.Designer.cs">
+      <DependentUpon>InsertQiKan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\InsertQiKanCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\InsertQiKanCP.Designer.cs">
+      <DependentUpon>InsertQiKanCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\InsertUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\InsertUser.Designer.cs">
+      <DependentUpon>InsertUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\LendBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\LendBook.Designer.cs">
+      <DependentUpon>LendBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\Lending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Lending.Designer.cs">
+      <DependentUpon>Lending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\Lending2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Lending2.Designer.cs">
+      <DependentUpon>Lending2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\LendQiKan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\LendQiKan.Designer.cs">
+      <DependentUpon>LendQiKan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\ListBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\ListBook.Designer.cs">
+      <DependentUpon>ListBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\ListQiKan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\ListQiKan.Designer.cs">
+      <DependentUpon>ListQiKan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\ListReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\ListReader.Designer.cs">
+      <DependentUpon>ListReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\Returning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Returning.Designer.cs">
+      <DependentUpon>Returning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\Returning2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Returning2.Designer.cs">
+      <DependentUpon>Returning2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\SellBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\SellBook.Designer.cs">
+      <DependentUpon>SellBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\SellQiKan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\SellQiKan.Designer.cs">
+      <DependentUpon>SellQiKan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\ShowBookSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\ShowBookSell.Designer.cs">
+      <DependentUpon>ShowBookSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\ShowQiKanSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\ShowQiKanSell.Designer.cs">
+      <DependentUpon>ShowQiKanSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Functions\InsertBook.resx">
+      <DependentUpon>InsertBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\InsertBookCP.resx">
+      <DependentUpon>InsertBookCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\InsertQiKan.resx">
+      <DependentUpon>InsertQiKan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\InsertQiKanCP.resx">
+      <DependentUpon>InsertQiKanCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\InsertUser.resx">
+      <DependentUpon>InsertUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\LendBook.resx">
+      <DependentUpon>LendBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Lending.resx">
+      <DependentUpon>Lending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Lending2.resx">
+      <DependentUpon>Lending2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\LendQiKan.resx">
+      <DependentUpon>LendQiKan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\ListBook.resx">
+      <DependentUpon>ListBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\ListQiKan.resx">
+      <DependentUpon>ListQiKan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\ListReader.resx">
+      <DependentUpon>ListReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Returning.resx">
+      <DependentUpon>Returning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Returning2.resx">
+      <DependentUpon>Returning2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\SellBook.resx">
+      <DependentUpon>SellBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\SellQiKan.resx">
+      <DependentUpon>SellQiKan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\ShowBookSell.resx">
+      <DependentUpon>ShowBookSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\ShowQiKanSell.resx">
+      <DependentUpon>ShowQiKanSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
